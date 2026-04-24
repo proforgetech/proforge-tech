@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - ProForge Tech</title>
+    <meta name="description"
+        content="Read the latest insights, research discussions, and AI engineering updates from the ProForge Tech team.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proforge.tech/blog.html">
+    <meta property="og:title" content="Blog - ProForge Tech">
+    <meta property="og:description"
+        content="Read the latest insights, research discussions, and AI engineering updates from the ProForge Tech team.">
+    <meta property="og:image" content="https://proforge.tech/seo_banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://proforge.tech/blog.html">
+    <meta property="twitter:title" content="Blog - ProForge Tech">
+    <meta property="twitter:description"
+        content="Read the latest insights, research discussions, and AI engineering updates from the ProForge Tech team.">
+    <meta property="twitter:image" content="https://proforge.tech/seo_banner.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 1rem; color: var(--text-main); text-decoration: none;">
+                <img src="placeholder_logo.png" alt="ProForge Tech Logo" id="brand-logo">
+                <span>ProForge Tech</span>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="blog.html" style="color: var(--accent-primary);">Blog</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </nav>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section class="blog-page">
+            <div class="container">
+                <h1 class="glow-text" style="text-align: center; font-size: 3.5rem; margin-bottom: 2rem;">Insights &
+                    <span class="highlight">Updates</span></h1>
+                <p
+                    style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Dive into our latest thoughts on AI architectures, deployment strategies, and our experiences
+                    bridging the gap between research and reality.
+                </p>
+
+                <div class="blog-grid">
+
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card">
+                        <div class="blog-image" style="background: linear-gradient(45deg, #2a164a, #4b0082);">
+                            <span style="font-size: 3rem;">🚀</span>
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-meta">April 24, 2026 • 5 min read</p>
+                            <h3>Deploying LLMs on a Student Budget</h3>
+                            <p class="blog-excerpt">
+                                We explore practical strategies for taking fine-tuned Large Language Models from the lab
+                                to production without breaking the bank. From quantization to serverless architectures,
+                                here is how we do it at ProForge Tech.
+                            </p>
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read
+                                Full Post</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-card">
+                        <div class="blog-image"
+                            style="background: linear-gradient(45deg, #170b29, var(--accent-primary)); opacity: 0.8;">
+                            <span style="font-size: 3rem;">🧠</span>
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-meta">April 15, 2026 • 4 min read</p>
+                            <h3>Bridging PyTorch to React</h3>
+                            <p class="blog-excerpt">
+                                A technical deep dive into building robust REST APIs with FastAPI to serve PyTorch
+                                models directly to modern React frontends. We share our boilerplate setup and best
+                                practices.
+                            </p>
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read
+                                Full Post</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-card">
+                        <div class="blog-image"
+                            style="background: linear-gradient(45deg, #4b0082, var(--accent-secondary)); opacity: 0.8;">
+                            <span style="font-size: 3rem;">📊</span>
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-meta">April 02, 2026 • 7 min read</p>
+                            <h3>Data Engineering for Computer Vision</h3>
+                            <p class="blog-excerpt">
+                                Clean data is the lifeblood of any ML project. Learn how we set up scalable data
+                                pipelines and augmentation strategies for complex computer vision research projects.
+                            </p>
+                            <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read
+                                Full Post</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>ProForge Tech</h3>
+                <p>Building the future of student AI.</p>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Quick Links</h4>
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#services">Our Capabilities</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Connect With Us</h4>
+                <a href="mailto:proforgelabs@gmail.com">proforgelabs@gmail.com</a>
+                <a href="https://instagram.com/proforge.tech" target="_blank" rel="noopener noreferrer">IG:
+                    @proforge.tech</a>
+                <a href="https://facebook.com/proforge.tech" target="_blank" rel="noopener noreferrer">FB:
+                    @proforge.tech</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ProForge Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
