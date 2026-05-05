@@ -420,3 +420,211 @@ footer {
     overflow: hidden;
     flex-grow: 1;
 }
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto 5rem;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(175, 77, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 400px;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--card-bg);
+    position: relative;
+}
+
+.carousel-item-image {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #2a164a, #4b0082);
+    font-size: 5rem;
+}
+
+.carousel-item-content {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-meta {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.carousel-item-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+.carousel-item-content p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(13, 6, 20, 0.5);
+    border: 1px solid var(--accent-primary);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+    font-size: 1.5rem;
+}
+
+.carousel-control:hover {
+    background: var(--accent-primary);
+    box-shadow: 0 0 15px var(--glow-color);
+}
+
+.carousel-control.prev {
+    left: 20px;
+}
+
+.carousel-control.next {
+    right: 20px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.indicator.active {
+    background: var(--accent-primary);
+    box-shadow: 0 0 10px var(--glow-color);
+}
+
+/* Individual Blog Post Styles */
+.post-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.post-meta {
+    color: var(--accent-primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.post-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.post-hero-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #170b29, #2a164a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    border: 1px solid rgba(175, 77, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.post-content h2 {
+    color: var(--text-main);
+    font-size: 2.2rem;
+    margin: 3rem 0 1.5rem;
+    text-align: left;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content ul, .post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        flex-direction: column;
+    }
+    .carousel-item-image {
+        flex: 0.5;
+        width: 100%;
+    }
+    .carousel-item-content {
+        flex: 0.5;
+        padding: 2rem;
+    }
+    .carousel-inner {
+        height: 500px;
+    }
+    .post-title {
+        font-size: 2.5rem;
+    }
+}
